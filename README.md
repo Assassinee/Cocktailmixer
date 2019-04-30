@@ -2,8 +2,7 @@
 
 TEXT
 
-##Quellen
-
+## Quellen:
 Raspberry Pi: Belegung GPIO (Banana Pi und WiringPi):  
 [Belegung GPIO](https://www.elektronik-kompendium.de/sites/raspberry-pi/1907101.htm "Belegung GPIO")
 
