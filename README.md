@@ -1,6 +1,8 @@
 # cocktailmixer
 
-TEXT
+Das ziel von diesem Projekt ist es eine Cocktaimixer zu bauen, an dem per Knopfdruck oder Weboberfläche ein Cocktail bestellt werden kann.
+
+![Cocktailmixer](https://drive.google.com/file/d/1Biz-BLFSi_tPJ0X5JwVjyudzPwptfK7q/view?usp=drivesdk)
 
 ## Quellen:
 Raspberry Pi: Belegung GPIO (Banana Pi und WiringPi):  
