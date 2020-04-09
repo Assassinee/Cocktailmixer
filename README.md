@@ -103,3 +103,5 @@ Dieses Projekt wurde erstellt von:
 - Eine Mögliche Erweiterung wäre ein LCD Display anzubringen, damit einem Der Aktuelle Status
 angezeigt werden kann.
 [![LCD Dysplay](Bilder/Thumbnail/LCD_Raspberry_Pi.png)](https://drive.google.com/open?id=1Psro-3tgKJCbSye2eyryViIvabenVU7V)
+- Eine Weiter Erweiterung wäre es, ein Webinterface zu erstellen um sich einen Cocktail bestellen
+zu können.
