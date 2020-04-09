@@ -105,3 +105,6 @@ angezeigt werden kann.
 [![LCD Dysplay](Bilder/Thumbnail/LCD_Raspberry_Pi.png)](https://drive.google.com/open?id=1Psro-3tgKJCbSye2eyryViIvabenVU7V)
 - Eine Weiter Erweiterung wäre es, ein Webinterface zu erstellen um sich einen Cocktail bestellen
 zu können.
+
+# Lizenz
+Dieses Projekt verwendet die [GNU AGPLv3](LICENSE) GNU Affero General Public License v3.0 - schau dir die [LICENSE.md](LICENSE) Datei für mehr Details an.
