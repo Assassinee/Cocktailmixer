@@ -3,6 +3,7 @@
 Das Ziel von diesem Projekt ist es eine Cocktailmixer zu bauen,
 an dem per Knopfdruck ein Cocktail bestellt werden kann.
 Dieser Cocktail soll dann in einem Glas zubereitet werden.
+
 ![Cocktailmixer](Bilder/Cocktailmixer.JPG)
 
 # Vorbereitung
@@ -27,6 +28,7 @@ in dem Cocktailmixer installiert. An dieser Steckdose ist der Raspberry Pi anges
 Die Spannungsversorgung für die Relais wurde direkt mit der Steckdose verkabelt. Damit die
 Verkabelung übersichtlicher aus sieht, geht eine Stromführende Ader von der Spannungsversorgung
 zu einer Wago Klemme an den Relais. Von dort aus werden alle einzelnen Relais mit Strom versorgt.
+
 ![Strom](Bilder/Elektronik.JPG)
 
 ## Relais
@@ -35,6 +37,7 @@ Ventile ohne Stromzufuhr geschlossen sind, mussten die Relais als Schließer ben
 Die Relais werden auch an dem Raspberry Pi an den GPIO Pins angeschlossen. Es wird für jedes
 Relais was benutzt werden soll ein Kabel benötigt, sowie für die Spannung und den Rückleiter
 jeweils ein Kabel. 
+
 ![Relais](Bilder/Relais.JPG)
 
 ## Ventile
@@ -42,6 +45,7 @@ Die Adern, die zu den Ventilen führen, wurden mit Kabelschuhen versehen und dam
 Ventilen angesteckt. Es wurde sich dafür entschieden, da es wesentlich schneller ging
 als die einzelnen Adern zu verlöten und da die Kabelschuhe sehr gut an die Anschlüsse
 der Ventile gepasst haben.
+
 ![Ventile](Bilder/Ventile.JPG)
 
 ## Knöpfe
@@ -49,6 +53,7 @@ Da im späteren Verlauf des Projektes festgestellt wurde, das es ein kleines Pro
 den Knöpfen gab, wurden ein Knopf zu bestätigen der Bestellung und jeweils ein Knopf
 für den entsprechenden Cocktail angebracht. Alle Knöpfe sind auch mit dem Raspberry Pi
 über die GPIO Pins verbunden.
+
 ![Knöpfe](Bilder/Knoepfe.JPG)
 
 ## Verkabelung
@@ -81,6 +86,7 @@ Ein Raspberry Pi hab bis zu 40 GPIO Pins. Diese können für viele verschiedene 
 Es gibt einige Pinne, die eine Feste Belegung haben, daher z.B. über Spannung verfügen.
 
 Hier ist aufgeführt, welche Eigenschaften die einzelne Pinne haben:
+
 ![GPIO Belegung](Bilder/Raspberry_Pi-GPIO.jpg)
 
 Quelle: [elektronik kompendium](https://www.elektronik-kompendium.de/sites/raspberry-pi/1907101.htm)
@@ -94,6 +100,7 @@ oder auch ein Befehl über einen Pin schicken kann.
 Das Fertige Script ist in der Datei [mixer.py](mixer.py)
 
 Ein Hilfreiches Video ist außerdem:
+
 [![Video](Bilder/Thumbnail/Raspberry_Pi_Relais_Steuern_mit_Python.jpg)](https://drive.google.com/open?id=1lVsQq2EKcb3-Y0far_i8LIsIc8s1JyGv)
 
 ## Pulldown Wiederstand
@@ -101,7 +108,9 @@ Bei dem Testen des Programme ist aufgefallen, dass der Raspberry Pi troz nicht b
 Knopfes eine Signal bekommt. Die kann durch die Verwendung des PullDown Wiederstandes verhindert
 werden.
 
-Quelle: [![Video](Bilder/Thumbnail/Raspberry_Pi_GPIO_Input_Button_Status_einlesen.jpg)](https://drive.google.com/open?id=1GNXiwCf0wBmvNQBNOa4OeN26SdjjF9Px)
+Video:
+
+[![Video](Bilder/Thumbnail/Raspberry_Pi_GPIO_Input_Button_Status_einlesen.jpg)](https://drive.google.com/open?id=1GNXiwCf0wBmvNQBNOa4OeN26SdjjF9Px)
 
 # Script beim Booten starten
 Damit nach dem starten des Raspberry Pi das Script automatisch gestartet wird und nicht
@@ -127,6 +136,7 @@ Dieses Projekt wurde erstellt von:
 # Erweiterungen
 - Eine Mögliche Erweiterung wäre ein LCD Display anzubringen, damit einem Der Aktuelle Status
 angezeigt werden kann.
+
 [![LCD Dysplay](Bilder/Thumbnail/LCD_Raspberry_Pi.jpg)](https://drive.google.com/open?id=1Psro-3tgKJCbSye2eyryViIvabenVU7V)
 - Eine Weiter Erweiterung wäre es, ein Webinterface zu erstellen um sich einen Cocktail bestellen
 zu können.
