@@ -51,12 +51,37 @@ für den entsprechenden Cocktail angebracht. Alle Knöpfe sind auch mit dem Rasp
 über die GPIO Pins verbunden.
 ![Knöpfe](Bilder/Knoepfe.JPG)
 
+## Verkabelung
+Knöpfe:
+
+|Pi Port|GPIO||
+|---|---|---|
+|1|+3,3v|Spannung|
+|11|17|Malibu|
+|13|27|43er|
+|15|22|Sicherung|
+
+Relais:
+
+|Pi Port|GPIO |Relais|Ventil|Getränk|
+|---|---|---|---|---|
+|4|+5v|||||
+|6|GND|||||
+|8|14|K1|1|43er|
+|10|15|K2|2|Malibu|
+|12|18|K3|3|Limette|
+|16|23|K4|4|Maracuja|
+|28|24|K5|5|Cranberry|
+|22|25|K6|6|-|
+|24|8|K7|7|-|
+|26|7|K8|8|-|
+
 # GPIO
 Ein Raspberry Pi hab bis zu 40 GPIO Pins. Diese können für viele verschiedene Sachen benutzt werden.
 Es gibt einige Pinne, die eine Feste Belegung haben, daher z.B. über Spannung verfügen.
 
 Hier ist aufgeführt, welche Eigenschaften die einzelne Pinne haben:
-![GPIO Belegung](https://www.elektronik-kompendium.de/sites/raspberry-pi/fotos/raspberry-pi-15b.jpg)
+![GPIO Belegung](Bilder/Raspberry_Pi-GPIO.jpg)
 
 Quelle: [elektronik kompendium](https://www.elektronik-kompendium.de/sites/raspberry-pi/1907101.htm)
 
@@ -69,14 +94,14 @@ oder auch ein Befehl über einen Pin schicken kann.
 Das Fertige Script ist in der Datei [mixer.py](mixer.py)
 
 Ein Hilfreiches Video ist außerdem:
-[![Video](Bilder/Thumbnail/Raspberry_Pi_Relais_Steuern_mit_Python.png)](https://drive.google.com/open?id=1lVsQq2EKcb3-Y0far_i8LIsIc8s1JyGv)
+[![Video](Bilder/Thumbnail/Raspberry_Pi_Relais_Steuern_mit_Python.jpg)](https://drive.google.com/open?id=1lVsQq2EKcb3-Y0far_i8LIsIc8s1JyGv)
 
 ## Pulldown Wiederstand
 Bei dem Testen des Programme ist aufgefallen, dass der Raspberry Pi troz nicht betätigen des
 Knopfes eine Signal bekommt. Die kann durch die Verwendung des PullDown Wiederstandes verhindert
 werden.
 
-Quelle: [![Video](Bilder/Thumbnail/Raspberry_Pi_GPIO_Input_Button_Status_einlesen.png)](https://drive.google.com/open?id=1GNXiwCf0wBmvNQBNOa4OeN26SdjjF9Px)
+Quelle: [![Video](Bilder/Thumbnail/Raspberry_Pi_GPIO_Input_Button_Status_einlesen.jpg)](https://drive.google.com/open?id=1GNXiwCf0wBmvNQBNOa4OeN26SdjjF9Px)
 
 # Script beim Booten starten
 Damit nach dem starten des Raspberry Pi das Script automatisch gestartet wird und nicht
@@ -102,6 +127,6 @@ Dieses Projekt wurde erstellt von:
 # Erweiterungen
 - Eine Mögliche Erweiterung wäre ein LCD Display anzubringen, damit einem Der Aktuelle Status
 angezeigt werden kann.
-[![LCD Dysplay](Bilder/Thumbnail/LCD_Raspberry_Pi.png)](https://drive.google.com/open?id=1Psro-3tgKJCbSye2eyryViIvabenVU7V)
+[![LCD Dysplay](Bilder/Thumbnail/LCD_Raspberry_Pi.jpg)](https://drive.google.com/open?id=1Psro-3tgKJCbSye2eyryViIvabenVU7V)
 - Eine Weiter Erweiterung wäre es, ein Webinterface zu erstellen um sich einen Cocktail bestellen
 zu können.
